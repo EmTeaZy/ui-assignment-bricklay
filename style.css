@@ -1,0 +1,66 @@
+:root {
+  --dark-color: #707070;
+}
+
+/* Font weights */
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+/* Font sizes */
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lg {
+  font-size: 20px;
+}
+
+.font-xl {
+  font-size: 50px;
+}
+
+.font-xxl {
+  font-size: 90px !important;
+}
+
+body {
+  background-color: var(--dark-color);
+  font-family: "Jost", sans-serif;
+}
+
+.avatar {
+  height: 32px;
+  width: 32px;
+}
+
+.color-dark {
+  background-color: var(--dark-color);
+}
+
+.color-purple {
+  background-color: #0f0d1d;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(201, 201, 201);
+}
