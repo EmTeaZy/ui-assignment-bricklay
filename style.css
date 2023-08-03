@@ -1,12 +1,16 @@
 :root {
   --dark-color: #707070;
-  
+  --dark-blue: #0F0D1D;
 }
 
 /* Font weights */
 
 .font-regular {
   font-weight: 400;
+}
+
+.font-regular-bold {
+  font-weight: 500;
 }
 
 .font-bold {
@@ -24,11 +28,15 @@
 }
 
 .font-md {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .font-lg {
   font-size: 20px;
+}
+
+.font-xlg {
+  font-size: 26px;
 }
 
 .font-xl {
@@ -63,6 +71,14 @@ body {
 
 .color-light-gray {
   background-color: #434B4DBD;
+}
+
+.color-light-blue {
+  background-color: #EBF1FF;
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
 }
 
 .text-light-gray {
@@ -167,4 +183,14 @@ body {
   border: 1px solid #3C72FC4D;
   text-decoration: none;
   cursor: pointer;
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  font-size: 123px;
+  letter-spacing: 40px;
+  font-weight: 300;
+  color: #F2F4F8;
+  margin: 0;
 }
