@@ -1,208 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/721d1e6587.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bricklay</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/721d1e6587.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Bricklay</title>
-</head>
+  <body class="">
+    <nav class="navbar navbar-expand-lg text-white border-5 border-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"
+          ><img src="./images/logo.png" class="avatar" alt="Logo"
+        /></a>
 
-<body class="">
-  <nav class="navbar navbar-expand-lg text-white border-5 border-light">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#"><img src="./images/logo.png" class="avatar" alt="Logo" /></a>
+        <!-- Responsive Navbar Toggler -->
 
-      <!-- Responsive Navbar Toggler -->
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Home</a>
+            </li>
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto ">
-          <!-- Home -->
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Home</a>
-          </li>
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-uppercase dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Service 1</a>
+                <a class="dropdown-item" href="#">Service 2</a>
+                <!-- Add more services as needed -->
+              </div>
+            </li>
 
-          <!-- Services Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="servicesDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <a class="dropdown-item" href="#">Service 1</a>
-              <a class="dropdown-item" href="#">Service 2</a>
-              <!-- Add more services as needed -->
-            </div>
-          </li>
+            <!-- Pages -->
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Pages</a>
+            </li>
 
-          <!-- Pages -->
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Pages</a>
-          </li>
+            <!-- Case Shop -->
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Case Shop</a>
+            </li>
 
-          <!-- Case Shop -->
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Case Shop</a>
-          </li>
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Blog</a>
+            </li>
+          </ul>
 
-          <!-- Blog -->
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Blog</a>
-          </li>
-        </ul>
+          <!-- Social Media Icons -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Instagram -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
 
-        <!-- Social Media Icons -->
-        <ul class="navbar-nav ms-auto">
-          <!-- Instagram -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
-          </li>
+            <!-- LinkedIn -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
 
-          <!-- LinkedIn -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
-          </li>
+            <!-- Twitter -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+            </li>
 
-          <!-- Twitter -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
-          </li>
+            <!-- Facebook -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+          </ul>
 
-          <!-- Facebook -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-        </ul>
+          <!-- Search Icon -->
+          <form class="form d-flex my-2 my-lg-0">
+            <a class="nav-link"><i class="fa fa-search"></i></a>
+          </form>
 
-        <!-- Search Icon -->
-        <form class="form d-flex my-2 my-lg-0">
-          <a class="nav-link"><i class="fa fa-search"></i></a>
-        </form>
-
-        <!-- Need Help Link -->
-        <a class="nav-link" href="tel:+9212312312">Need help?<br />
-          +92 12312312</a>
+          <!-- Need Help Link -->
+          <a class="nav-link" href="tel:+9212312312"
+            >Need help?<br />
+            +92 12312312</a
+          >
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section id="hero" class="mb-5">
-    <div class="container text-uppercase text-white p-5 mb-5">
-      <p class="color-light-gray d-inline-block py-2 px-3">Welcome to codeshaper</p>
-      <h1 class="font-bold font-xxl">
-        Consulting <br />
-        for every <br />
-        business
-      </h1>
-      <button class="btn btn-primary text-uppercase py-3 px-4">
-        Discover more
-      </button>
-    </div>
-  </section>
-
-  <section id="real-world-experience" class="py-5 color-purple">
-    <div class="container">
-      <div class="text-white p-5 mb-4 text-center">
-        <h1 class="font-bold font-xl text-uppercase">REAL-WORLD EXPERIENCE</h1>
-        <p class="text-light-gray">The best business consulting firm you can count on!</p>
+    <section id="hero" class="mb-5">
+      <div class="container text-uppercase text-white p-5 mb-5">
+        <p class="color-light-gray d-inline-block py-2 px-3">
+          Welcome to codeshaper
+        </p>
+        <h1 class="font-bold font-xxl">
+          Consulting <br />
+          for every <br />
+          business
+        </h1>
+        <button class="btn btn-primary text-uppercase py-3 px-4">
+          Discover more
+        </button>
       </div>
+    </section>
 
-      <div>
-        <div id="carouselExampleControls" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between overflow-hidden">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
-                    </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
+    <section id="real-world-experience" class="py-5 color-purple">
+      <div class="container">
+        <div class="text-white p-5 mb-4 text-center">
+          <h1 class="font-bold font-xl text-uppercase">
+            REAL-WORLD EXPERIENCE
+          </h1>
+          <p class="text-light-gray">
+            The best business consulting firm you can count on!
+          </p>
+        </div>
+
+        <div>
+          <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between overflow-hidden"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
-                    </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
-                    </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
-                    </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
-                    </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <div id="card"
-                    class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between">
-                    <div class="d-flex flex-column justify-content-between gap-4 pb-5">
-                      <h3 class="text-white font-lg font-semi-bold">WEALTH <br> MANAGEMENT</h3>
-                      <p class="mb-0 text-light-gray">READ MORE</p>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
-                    <div class="d-md-none d-lg-block">
-                      <i class="fa fa-bitbucket font-xxl text-primary" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div
+                      id="card"
+                      class="d-flex flex-row gap-5 gap-lg-0 color-black px-6 px-md-5 pt-10 pb-5 align-items-end justify-content-between"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between gap-4 pb-5"
+                      >
+                        <h3 class="text-white font-lg font-semi-bold">
+                          WEALTH <br />
+                          MANAGEMENT
+                        </h3>
+                        <p class="mb-0 text-light-gray">READ MORE</p>
+                      </div>
+                      <div class="d-md-none d-lg-block">
+                        <i
+                          class="fa fa-bitbucket font-xxl text-primary"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -210,87 +303,257 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mt-10 d-flex flex-row align-content-center justify-content-center">
-        <div class="col-4 text-center w-100">
-          <h1 class="font-md text-white font-semi-bold inbetween-lines">MEET THE PARTNERS</h1>
-        </div>
-      </div>
-
-      <div class="d-flex flex-row align-content-center justify-content-between w-100 mt-5 mb-5">
-        <button class="blue-gradient border-1 py-1 px-2 btn-default" type="button"
-          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <i class="fa fa-arrow-left text-primary"></i>
-        </button>
-        <button class="blue-gradient py-1 px-2 btn-default" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <i class="fa fa-arrow-right text-primary"></i>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white py-10">
-    <div class="container">
-      <div class="d-flex row flex-row align-items-baseline justify-content-between">
-        <div class="col-lg-6 col-md-12 mb-3">
-          <i class="fa-solid fa-play bg-primary p-4 text-white"></i>
-        </div>
-        <div class="col-lg-6 col-md-12 gap-1 d-flex flex-row justify-content-between align-items-center">
-          <div class="w-90 d-flex flex-column gap-5 ">
-            <h1 class="font-xl font-bold text-dark-blue">
-              We're leading in <br /> the market
+        <div
+          class="mt-10 d-flex flex-row align-content-center justify-content-center"
+        >
+          <div class="col-4 text-center w-100">
+            <h1 class="font-md text-white font-semi-bold inbetween-lines">
+              MEET THE PARTNERS
             </h1>
-            <p class="font-md font-regular-bold text-light-gray">
-              Lorem ipsum is simply free text dolor sit amet, consectetur notted <br />
-              adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua lonm andhn.
-            </p>
-            <p class="font-regular font-xlg text-primary">
-              We have 35+ years of experience. We offer
-              marketing and consulting services
-            </p>
-            <div>
-              <div class="mb-3">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0"
-                    aria-valuemax="100">88%</div>
-                </div>
-                <h3 class="font-sm font-bold text-black mt-2">CONSULTING</h3>
-              </div>
-  
-              <div>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0"
-                    aria-valuemax="100">68%</div>
-                </div>
-                <h3 class="font-sm font-bold text-black mt-2">ADVICES</h3>
-              </div>
-  
-            </div>
-            <div class="d-flex flex-row justify-content-start gap-4 align-items-center">
-              <div class="color-light-blue p-4">
-                <i class="fa-solid fa-phone-volume text-primary"></i>
-              </div>
-              <div class="d-flex flex-column align-items-start justify-content-between">
-                <p class="font-lg font-regular text-light-gray">Have any question? Give us a call</p>
-                <p class="mb-0 font-md font-regular-bold text-dark-blue">+92 666 888 0000</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-10">
-            <h1 class="text-vertical">AIVONS</h1>
           </div>
         </div>
-        
+
+        <div
+          class="d-flex flex-row align-content-center justify-content-between w-100 mt-5 mb-5"
+        >
+          <button
+            class="blue-gradient border-1 py-1 px-2 btn-default"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <i class="fa fa-arrow-left text-primary"></i>
+          </button>
+          <button
+            class="blue-gradient py-1 px-2 btn-default"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <i class="fa fa-arrow-right text-primary"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
+    <section class="bg-white pt-10 pb-20">
+      <div class="container">
+        <div
+          class="d-flex row flex-row align-items-baseline justify-content-between"
+        >
+          <div class="col-lg-6 col-md-12 mb-3">
+            <i class="fa-solid fa-play bg-primary p-4 text-white"></i>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 gap-1 d-flex flex-row justify-content-between align-items-center"
+          >
+            <div class="w-90 d-flex flex-column gap-5">
+              <h1 class="font-xl font-bold text-dark-blue">
+                We're leading in <br />
+                the market
+              </h1>
+              <p class="font-md font-regular-bold text-light-gray">
+                Lorem ipsum is simply free text dolor sit amet, consectetur
+                notted <br />
+                adipisicing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua lonm andhn.
+              </p>
+              <p class="font-regular font-xlg text-primary">
+                We have 35+ years of experience. We offer marketing and
+                consulting services
+              </p>
+              <div>
+                <div class="mb-3">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 88%"
+                      aria-valuenow="88"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      88%
+                    </div>
+                  </div>
+                  <h3 class="font-sm font-bold text-black mt-2">CONSULTING</h3>
+                </div>
 
+                <div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 68%"
+                      aria-valuenow="68"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      68%
+                    </div>
+                  </div>
+                  <h3 class="font-sm font-bold text-black mt-2">ADVICES</h3>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-row justify-content-start gap-4 align-items-center"
+              >
+                <div class="color-light-blue p-4">
+                  <i class="fa-solid fa-phone-volume text-primary"></i>
+                </div>
+                <div
+                  class="d-flex flex-column align-items-start justify-content-between"
+                >
+                  <p class="font-lg font-regular text-light-gray">
+                    Have any question? Give us a call
+                  </p>
+                  <p class="mb-0 font-md font-regular-bold text-dark-blue">
+                    +92 666 888 0000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-10">
+              <h1 class="text-vertical">AIVONS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-bg position-relative pt-10">
+      <div class="container">
+        <div
+          class="row d-flex flex-row justify-content-between align-items-start container absolute-positioning"
+        >
+          <div
+            class="shadow-lg col-lg-6 col-sm-12 bg-white p-5 d-flex flex-row justify-content-start align-items-baseline"
+          >
+            <div
+              class="d-flex flex-row justify-content-start align-items-center gap-3"
+            >
+              <div>
+                <h3
+                  class="p-3 color-light-blue text-primary font-semi-bold font-xlg"
+                >
+                  01
+                </h3>
+              </div>
+              <div
+                class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between align-items-start gap-2"
+              >
+                <h3 class="font-lg font-bold text-dark-blue">
+                  GET PROFESSIONAL ADVICE
+                </h3>
+                <p class="font-sm font-regular-bold text-light-gray mb-0">
+                  There are many variations of available but the majority have
+                  suffered alteration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="shadow-lg col-lg-6 col-sm-12 bg-white p-5 d-flex flex-row justify-content-start align-items-baseline"
+          >
+            <div
+              class="d-flex flex-row justify-content-start align-items-center gap-3"
+            >
+              <div>
+                <h3
+                  class="p-3 color-light-blue text-primary font-semi-bold font-xlg"
+                >
+                  01
+                </h3>
+              </div>
+              <div
+                class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between align-items-start gap-2"
+              >
+                <h3 class="font-lg font-bold text-dark-blue">
+                  GET PROFESSIONAL ADVICE
+                </h3>
+                <p class="font-sm font-regular-bold text-light-gray mb-0">
+                  There are many variations of available but the majority have
+                  suffered alteration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-10">
+        <div class="text-center mb-5">
+          <h1 class="font-xl font-bold text-dark-blue">NEW CASE STUDIES</h1>
+          <p class="font-md font-bold text-light-gray mt-4">
+            We help our clients renew their business
+          </p>
+        </div>
+        <div
+          class="row d-flex flex-row align-items-center justify-content-between card-gap container mx-auto"
+        >
+          <div
+            class="col-lg-4 col-sm-12 px-5 pb-5 pt-30 color-gray gap-2 text-white d-flex flex-row justify-content-start align-items-end card-width"
+          >
+            <div
+              class="d-flex flex-column justify-content-between align-items-start"
+            >
+              <i class="fa-solid fa-car fa-2xl" style="color: #ffffff"></i>
+              <p class="mb-0 font-sm font-bold mt-4">THOUGHT LEADERSHIP</p>
+              <h2 class="font-bold font-xlg mb-0">
+                BUSINESSES <br />
+                GROWTH
+              </h2>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-12 px-5 pb-5 pt-30 color-gray gap-2 text-white d-flex flex-row justify-content-start align-items-end card-width"
+          >
+            <div
+              class="d-flex flex-column justify-content-between align-items-start"
+            >
+              <i class="fa-solid fa-car fa-2xl" style="color: #ffffff"></i>
+              <p class="mb-0 font-sm font-bold mt-4">THOUGHT LEADERSHIP</p>
+              <h2 class="font-bold font-xlg mb-0">
+                BUSINESSES <br />
+                GROWTH
+              </h2>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-12 px-5 pb-5 pt-30 color-gray gap-2 text-white d-flex flex-row justify-content-start align-items-end card-width"
+          >
+            <div
+              class="d-flex flex-column justify-content-between align-items-start"
+            >
+              <i class="fa-solid fa-car fa-2xl" style="color: #ffffff"></i>
+              <p class="mb-0 font-sm font-bold mt-4">THOUGHT LEADERSHIP</p>
+              <h2 class="font-bold font-xlg mb-0">
+                BUSINESSES <br />
+                GROWTH
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="color-mild-dark-blue py-10 text-center text-white">
+      <div class="container">
+        <h1 class="font-2xl font-bold">
+          MISSION IS TO PROTECT<br />
+          YOUR BUSINESSES &<br />
+          MUCH MORE
+        </h1>
+
+        <button class="btn btn-primary py-3 px-4 mt-5">DISCOVER MORE</button>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
