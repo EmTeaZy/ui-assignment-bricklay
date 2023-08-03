@@ -181,7 +181,7 @@ body {
 @media screen and (max-width: 767px) {
   .inbetween-lines:before,
   .inbetween-lines:after {
-    width: 34%;
+    width: 28%;
   }
 }
 
