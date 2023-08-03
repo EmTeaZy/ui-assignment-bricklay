@@ -1,6 +1,6 @@
 :root {
   --dark-color: #707070;
-  --dark-blue: #0F0D1D;
+  --dark-blue: #0f0d1d;
 }
 
 /* Font weights */
@@ -44,7 +44,7 @@
 }
 
 .font-xxl {
-  font-size: 90px !important;
+  font-size: 90px;
 }
 
 body {
@@ -70,11 +70,11 @@ body {
 }
 
 .color-light-gray {
-  background-color: #434B4DBD;
+  background-color: #434b4dbd;
 }
 
 .color-light-blue {
-  background-color: #EBF1FF;
+  background-color: #ebf1ff;
 }
 
 .text-dark-blue {
@@ -82,11 +82,23 @@ body {
 }
 
 .text-light-gray {
-  color: #8F8DA0;
+  color: #8f8da0;
+}
+
+.color-news-letter {
+  background-color: #06050c;
 }
 
 .blue-gradient {
-  background: linear-gradient(0deg, rgba(60, 114, 252, 0.2), rgba(60, 114, 252, 0.2));
+  background: linear-gradient(
+    0deg,
+    rgba(60, 114, 252, 0.2),
+    rgba(60, 114, 252, 0.2)
+  );
+}
+
+.avatar-blue {
+  color: #3c72fc;
 }
 
 .nav-link {
@@ -134,7 +146,7 @@ body {
   display: block;
   width: 43.5%;
   height: 1px;
-  background: #32303DB5;
+  background: #32303db5;
   left: 0;
   top: 40%;
   position: absolute;
@@ -144,7 +156,7 @@ body {
   display: block;
   width: 43.5%;
   height: 1px;
-  background: #32303DB5;
+  background: #32303db5;
   right: 0;
   top: 40%;
   position: absolute;
@@ -164,7 +176,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 993px) {
   .inbetween-lines:before,
   .inbetween-lines:after {
@@ -180,7 +191,7 @@ body {
 }
 
 .btn-default {
-  border: 1px solid #3C72FC4D;
+  border: 1px solid #3c72fc4d;
   text-decoration: none;
   cursor: pointer;
 }
@@ -191,6 +202,6 @@ body {
   font-size: 123px;
   letter-spacing: 40px;
   font-weight: 300;
-  color: #F2F4F8;
+  color: #f2f4f8;
   margin: 0;
 }
