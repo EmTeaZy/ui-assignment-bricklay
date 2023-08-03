@@ -1,6 +1,7 @@
 :root {
   --dark-color: #707070;
   --dark-blue: #0f0d1d;
+  --mild-dark-blue: #0f0d1dbf;
 }
 
 /* Font weights */
@@ -43,6 +44,10 @@
   font-size: 50px;
 }
 
+.font-2xl {
+  font-size: 60px;
+}
+
 .font-xxl {
   font-size: 90px;
 }
@@ -71,6 +76,14 @@ body {
 
 .color-light-gray {
   background-color: #434b4dbd;
+}
+
+.color-mild-dark-blue {
+  background-color: var(--mild-dark-blue);
+}
+
+.color-gray {
+  background: #0f0d1d6b;
 }
 
 .color-light-blue {
@@ -133,8 +146,21 @@ body {
   padding-top: 5rem;
 }
 
+.pb-20 {
+  padding-bottom: 10rem;
+}
+
+.pt-30 {
+  padding-top: 25rem;
+}
+
 .mt-10 {
   margin-top: 6rem;
+}
+
+.my-10 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .inbetween-lines {
@@ -204,4 +230,37 @@ body {
   font-weight: 300;
   color: #f2f4f8;
   margin: 0;
+}
+
+.light-bg {
+  background-color: #f2f4f8;
+}
+
+.card-width {
+  width: 32%;
+}
+
+.card-gap {
+  gap: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .card-width {
+    width: 100%;
+  }
+
+  .card-gap {
+    gap: 10px;
+  }
+}
+
+.absolute-positioning {
+  position: static;
+}
+
+@media screen and (min-width: 1200px) {
+  .absolute-positioning {
+    top: -90px;
+    position: absolute;
+  }
 }
